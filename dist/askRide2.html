@@ -94,12 +94,34 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
 
-            <form action="https://puber-api.herokuapp.com/roads" accept-charset="UTF-8" method="post">
+            <form action="https://puber-api.herokuapp.com/candidate_passenger_email" accept-charset="UTF-8" method="post">
               
-              <div id="map-canvas" style="height: 400px; width: 90%; border: solid 1px;"></div>
+              <p>
+                <span class="label label-primary">Select a route</span>
+                <script language="javascript">
+                  
+                  function pickRoad(road) {
+                    return function(event) {
+                      $("#driver_id").val(road.user.id);
+                      passenger_id = JSON.parse(Cookies.get('puber'))[0].id;
+                      $("#passenger_id").val(passenger_id);
+                    };
+                  }
+                                    
+                </script>
+                <div id="map-canvas" style="height: 400px; width: 90%; border: solid 1px;"></div>
+              </p>
 
-              <input type="text" style="width: 90%; height: 100px;" name="message_for_driver" id="message_for_driver"></input>
+              <p>
+                <span class="label label-primary">Write a message for the driver.</span>
+                <input type="text" style="width: 90%; height: 100px;" name="message_for_driver" id="message_for_driver"></input>
+              </p>
               
+              <input type="hidden" name="driver_id" id="driver_id"></input>
+              <input type="hidden" name="passenger_id" id="passenger_id"></input>
+
+              <input type="submit" value="Pedir un Ride"></input>
+
             </form>
 
             <script async defer
