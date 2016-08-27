@@ -1,0 +1,181 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>
+      Puber is not Uber</title>
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/vendor/modernizr.js">
+    </script>
+    <script src="https://puber-api.herokuapp.com/assets/application-0f9c20db1710bb40ccd066fd5ecf32d6d41aab68014dc74bae3290656913be7f.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+
+        <p class="browserupgrade">
+          You are using an <strong>
+            outdated</strong>
+          browser. Please <a href="http://browsehappy.com/">
+            upgrade your browser</a>
+          to improve your experience.</p>
+
+        <![endif]-->
+  <body id="page-top" class="index">
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">
+              Toggle navigation</span>
+            Menu <i class="fa fa-bars">
+            </i>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">
+            Puber Carpool</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="hidden">
+              <a href="#page-top">
+              </a>
+            </li>
+            <li>
+              <a class="normal" href="dashboard.html">
+                Dashboard</a>
+            </li>
+            <li>
+              <a class="normal" href="profile.html">
+                My Profile</a>
+            </li>
+            <li>
+              <a class="normal" href="#myroutes">
+                My Routes</a>
+            </li>
+            <li>
+              <a class="normal" href="javascript:void(0)" onclick="logout()">
+                Logout</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <!-- Header -->
+    <header id="myroutes" class="small">
+      <div class="container">
+        <div class="intro-text">
+          <!-- <h2 class="intro-lead-in"> -->
+          <!--   Create Route</h2> -->
+          <!-- <h3 class="section-subheading text-muted col-md-8 col-md-offset-2"> -->
+          <!--   <legend> -->
+          <!--     Lorem ipsum dolor sit amet consectetur.</legend> -->
+          <!-- </h3> -->
+        </div>
+      </div>
+    </header>
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+
+            <form action="https://puber-api.herokuapp.com/roads" accept-charset="UTF-8" method="post">
+              
+              <div id="map-canvas" style="height: 400px; width: 90%; border: solid 1px;"></div>
+
+              <input type="text" name="message_for_driver" id="message_for_driver"></input>
+              
+            </form>
+
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoaZLtlE_uGVWDt9lMQ5dT2lN3cRp1V7s&callback=initPassenger">
+            </script>
+            
+
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+      </div>
+    </section>
+    <footer class="small">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">
+              Copyright &copy; Puber 2016</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter">
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook">
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin">
+                  </i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li>
+                <a href="#">
+                  Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#">
+                  Terms of Use</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/vendor.js">
+    </script>
+    <script src="scripts/plugins.js">
+    </script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js">
+    </script>
+    <!-- Contact Form JavaScript -->
+    <script src="scripts/jqBootstrapValidation.js">
+    </script>
+    <script src="scripts/subscribe.js">
+    </script>
+    <script src="scripts/login.js">
+    </script>
+    <!-- Theme JavaScript -->
+    <script src="scripts/puber.js">
+    </script>
+    <script src="scripts/main.js">
+    </script>
+  </body>
+  </body>
+</html>
