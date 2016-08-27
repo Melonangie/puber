@@ -54,13 +54,16 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="normal" href="#services">My Profile</a>
+                            <a class="normal" href="dashboard.html">Dashboard</a>
                         </li>
                         <li>
-                            <a class="normal" href="#portfolio">My Routes</a>
+                            <a class="normal" href="profile.html">My Profile</a>
                         </li>
                         <li>
-                            <a class="normal" href="#about">Logout</a>
+                            <a class="normal" href="#myroutes">My Routes</a>
+                        </li>
+                        <li>
+                            <a class="normal" href="javascript:void(0)" onclick="logout();">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -70,7 +73,7 @@
         </nav>
 
         <!-- Header -->
-        <header class="small">
+        <header id="myroutes" class="small">
             <div class="container">
                 <div class="intro-text">
                         <h2 class="intro-lead-in">My Routes</h2>
@@ -216,6 +219,8 @@
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/page/page.js"></script>
 <!-- endbuild -->
 
 <!-- Plugin JavaScript -->
@@ -224,6 +229,7 @@
 <!-- Contact Form JavaScript -->
 <script src="scripts/jqBootstrapValidation.js"></script>
 <script src="scripts/subscribe.js"></script>
+<script src="scripts/login.js"></script>
 
 <!-- Theme JavaScript -->
 <script src="scripts/puber.js"></script>

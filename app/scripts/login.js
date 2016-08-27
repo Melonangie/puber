@@ -22,6 +22,12 @@ $(function() {
                     console.log(data);
                     var empty = isEmpty(data);
                     if (!empty) {
+                        // deletes any set cookie
+                        var cockie = Cookies.get('puber'); 
+                        if(!isEmpty(cockie)) {
+                            Cookies.remove('puber');
+                        }
+                        // sets a cookie
                         Cookies.set('puber', data, { expires: 7 });
                         page('/dashboard.html');
                     } else {

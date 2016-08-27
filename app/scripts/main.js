@@ -27,3 +27,12 @@ function isEmpty(obj) {
 
     return true;
 }
+
+// Logout
+function logout(){
+    Cookies.remove('puber');
+    page('/index.html');
+}
+
+
+
