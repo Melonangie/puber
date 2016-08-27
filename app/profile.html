@@ -11,7 +11,6 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -86,7 +85,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">Profile</h2>
-                        <h3 class="section-subheading text-muted col-md-8 col-md-offset-2"><legend>Lorem ipsum dolor sit amet consectetur.</legend></h3>
+                        <h3 class="section-subheading text-muted col-md-8 col-md-offset-2"><legend>Let other users know more about you.</legend></h3>
                     </div>
                 </div>
 
@@ -99,7 +98,7 @@
                           <div class="form-group">
                             <label class="col-sm-2 control-label" for="textinput">Name</label>
                             <div class="col-sm-10">
-                              <input type="text" placeholder="Name" class="form-control input-lg">
+                              <input id="profile-name" type="text" placeholder="Name" class="form-control input-lg">
                           </div>
                       </div>
 
@@ -107,7 +106,7 @@
                       <div class="form-group">
                         <label class="col-sm-2 control-label" for="textinput">Address</label>
                         <div class="col-sm-10">
-                          <input type="text" placeholder="Address Line 2" class="form-control input-lg">
+                          <input id="address" type="text" placeholder="Address Line 2" class="form-control input-lg">
                       </div>
                   </div>
 
@@ -115,7 +114,7 @@
                   <div class="form-group">
                     <label class="col-sm-2 control-label" for="textinput">City</label>
                     <div class="col-sm-10">
-                      <input type="text" placeholder="City" class="form-control input-lg">
+                      <input id="city" type="text" placeholder="City" class="form-control input-lg">
                   </div>
               </div>
 
@@ -123,22 +122,20 @@
               <div class="form-group">
                 <label class="col-sm-2 control-label" for="textinput">State</label>
                 <div class="col-sm-4">
-                  <input type="text" placeholder="State" class="form-control input-lg">
+                  <input id="state" type="text" placeholder="State" class="form-control input-lg">
               </div>
 
               <label class="col-sm-2 control-label" for="textinput">Postcode</label>
               <div class="col-sm-4">
-                  <input type="text" placeholder="Post Code" class="form-control input-lg">
+                  <input id="zipcode" type="text" placeholder="Post Code" class="form-control input-lg">
               </div>
           </div>
-
-
 
           <!-- Text input-->
           <div class="form-group">
             <label class="col-sm-2 control-label" for="textinput">Country</label>
             <div class="col-sm-10">
-              <input type="text" placeholder="Country" class="form-control input-lg">
+              <input id="counrty" type="text" placeholder="Country" class="form-control input-lg">
           </div>
       </div>
 
@@ -146,7 +143,7 @@
       <div class="form-group">
         <label class="col-sm-2 control-label" for="textinput">Email</label>
         <div class="col-sm-10">
-          <input type="email" placeholder="Email" class="form-control input-lg">
+          <input id="profile-email" type="email" placeholder="Email" class="form-control input-lg">
       </div>
   </div>
 
@@ -154,7 +151,7 @@
   <div class="form-group">
     <label class="col-sm-2 control-label" for="textinput">Phone</label>
     <div class="col-sm-10">
-      <input type="phone" placeholder="Phone number" class="form-control input-lg">
+      <input id="profile-phone" type="phone" placeholder="Phone number" class="form-control input-lg">
   </div>
 </div>
 
@@ -234,6 +231,7 @@
 <script src="scripts/jqBootstrapValidation.js"></script>
 <script src="scripts/subscribe.js"></script>
 <script src="scripts/login.js"></script>
+<script src="scripts/profile.js"></script>
 
 <!-- Theme JavaScript -->
 <script src="scripts/puber.js"></script>
