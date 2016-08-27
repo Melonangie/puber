@@ -46,6 +46,12 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
 }
+legend.white {
+  color:white;
+}
+.margin-bottom {
+  margin-bottom: 50px;
+}
 .img-centered {
   margin: 0 auto;
 }
@@ -246,7 +252,11 @@ header.main {
     background-image: url('../images/header-bg.jpg');
 }
 header.small {
-  height: 450px;
+  height: 350px;
+    background-image: url('../images/header-bg.jpg');
+}
+header.medium {
+  height: 550px;
     background-image: url('../images/header-bg.jpg');
 }
 .fb-image-profile {
@@ -292,6 +302,9 @@ header .intro-text .intro-heading {
     padding-top: 300px;
     padding-bottom: 200px;
   }
+header .intro-text.small {
+  padding-top: 150px;
+}
   header .intro-text .intro-lead-in {
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-style: italic;
