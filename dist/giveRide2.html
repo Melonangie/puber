@@ -94,8 +94,10 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
 
-            <div id="map-canvas" style="height: 400px; width: 90%; border: solid 1px;"></div>
             <form class="new_road" id="new_road" action="https://puber-api.herokuapp.com/roads" accept-charset="UTF-8" method="post">
+              <span class="label label-primary">When do you usually depart?</span>
+              <input type="text"></input>
+              <div id="map-canvas" style="height: 400px; width: 90%; border: solid 1px;"></div>
               <button type="submit">Guardar Ruta</button>
               <input type="hidden" name="road[user_id]" id="road_user_id" value="1"></input>
               <textarea name="road[path]" id="road_path" style="display:none;"></textarea>
