@@ -78,14 +78,13 @@
 
     <!-- Header -->
     <header>
-        <div class="container">
-            <div class="intro-text">
-                <div class="intro-lead-in">Bienvenido a Puber!</div>
-                <div class="intro-heading">¿Que deseas hacer?</div>
-                <a href="giveRide.html" class="page-scroll btn btn-xl col-md-offset-1 col-md-4">Dar ride</a>
-                <div class="col-md-1"></div>
-                <a href="askRide.html" class="page-scroll btn btn-xl col-md-offset-1 col-md-4">Pedir ride</a>
-            </div>
+        <div class="container" style="padding-top:90px">
+            <h1>Search</h1>
+            <div id="map-canvas" style="height: 500px; width: 90%; border: solid 1px;"></div>
+            <form class="new_road" id="new_road" action="/roads" accept-charset="UTF-8" method="post">
+                <button type="submit">Guardar Ruta</button>
+                <textarea name="road[path]" id="road_path" style="display:none;"></textarea>
+            </form>
         </div>
     </header>
 
@@ -142,6 +141,10 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/giveRide.js"></script>
     <!-- endbuild -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoaZLtlE_uGVWDt9lMQ5dT2lN3cRp1V7s&callback=initMap" async defer></script>
+
   </body>
 </html>

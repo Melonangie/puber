@@ -20,12 +20,11 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.support.cors = true;
-            var newuser = JSON.stringify({'user': {'name':name,'phone':phone,'email':email,'group':'accenture'}});
             $.ajax({
-                url: 'https://puber-api.herokuapp.com/users',
+                url: 'https://puber-api.herokuapp.com/users.json',
                 type: 'POST',
-                contentType: 'application/json',
-                data: newuser,
+                crossDomain: true,
+                data: {'user': {'name':name,'phone':phone,'email':email,'group':'accenture'}},
                 cache: false,
                 success: function() {
                     // Success message
@@ -36,10 +35,8 @@ $(function() {
                         .append('<strong>Your message has been sent. </strong>');
                     $('#success > .alert-success')
                         .append('</div>');
-
                     //clear all fields
                     $('#contactForm').trigger('reset');
-                    console.log(data);
                 },
                 error: function() {
                     // Fail message
