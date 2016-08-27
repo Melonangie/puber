@@ -154,11 +154,20 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
+.navbar-custom.white .navbar-brand {
+  color: #333;
+}
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
 .navbar-custom .navbar-brand.active {
   color: #fec503;
+}
+.navbar-custom.white .navbar-brand:hover,
+.navbar-custom.white .navbar-brand:focus,
+.navbar-custom.white .navbar-brand:active,
+.navbar-custom.white .navbar-brand.active {
+  color: #333;
 }
 .navbar-custom .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -170,6 +179,9 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   color: white;
   font-size: 12px;
+}
+.navbar-custom.white .navbar-toggle {
+  color: #333;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
@@ -186,6 +198,10 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .nav li a:focus {
   color: #fed136;
   outline: none;
+}
+.navbar-custom.white .nav li a:hover,
+.navbar-custom.white .nav li a:focus {
+  color: #333;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
