@@ -98,19 +98,6 @@
               
               <p>
                 <span class="label label-primary">Select a route</span>
-                <script language="javascript">
-
-                  passenger_id = JSON.parse(Cookies.get('puber'))[0].id;
-                  $("#passenger_id").val(passenger_id);
-                  $("#driver_id").val(passenger_id);
-                  
-                  function pickRoad(road) {
-                    return function(event) {
-                      $("#driver_id").val(road.user.id);
-                    };
-                  }
-                                    
-                </script>
                 <div id="map-canvas" style="height: 400px; width: 90%; border: solid 1px;"></div>
               </p>
 
@@ -200,6 +187,20 @@
     </script>
     <script src="scripts/main.js">
     </script>
+                <script language="javascript">
+
+                  passenger_id = JSON.parse(Cookies.get('puber'))[0].id;
+                  $("#passenger_id").val(passenger_id);
+                  $("#driver_id").val(passenger_id);
+                  
+                  function pickRoad(road) {
+                    return function(event) {
+                      $("#driver_id").val(road.user.id);
+                    };
+                  }
+                                    
+                </script>
+
   </body>
   </body>
 </html>
