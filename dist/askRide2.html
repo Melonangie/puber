@@ -99,12 +99,14 @@
               <p>
                 <span class="label label-primary">Select a route</span>
                 <script language="javascript">
+
+                  passenger_id = JSON.parse(Cookies.get('puber'))[0].id;
+                  $("#passenger_id").val(passenger_id);
+                  $("#driver_id").val(passenger_id);
                   
                   function pickRoad(road) {
                     return function(event) {
                       $("#driver_id").val(road.user.id);
-                      passenger_id = JSON.parse(Cookies.get('puber'))[0].id;
-                      $("#passenger_id").val(passenger_id);
                     };
                   }
                                     
@@ -120,7 +122,7 @@
               <input type="hidden" name="driver_id" id="driver_id"></input>
               <input type="hidden" name="passenger_id" id="passenger_id"></input>
 
-              <input type="submit" value="Pedir un Ride"></input>
+              <input type="submit" class="btn btn-primary btn-lg" value="Pedir un Ride"></input>
 
             </form>
 
