@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title>
-      Ofrece rides</title>
+      Puber is not Uber</title>
     <!-- Place favicon.ico in the root directory -->
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Custom Fonts -->
@@ -43,8 +43,8 @@
             Menu <i class="fa fa-bars">
             </i>
           </button>
-          <a class="navbar-brand page-scroll" href="dashboard.html">
-            Start Bootstrap</a>
+          <a class="navbar-brand page-scroll" href="#page-top">
+            Puber Carpool</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -54,24 +54,20 @@
               </a>
             </li>
             <li>
-              <a class="page-scroll" href="#services">
-                Services</a>
+              <a class="normal" href="#dashboard">
+                Dashboard</a>
             </li>
             <li>
-              <a class="page-scroll" href="#portfolio">
-                Portfolio</a>
+              <a class="normal" href="profile.html">
+                My Profile</a>
             </li>
             <li>
-              <a class="page-scroll" href="#about">
-                About</a>
+              <a class="normal" href="myroutes.html">
+                My Routes</a>
             </li>
             <li>
-              <a class="page-scroll" href="#team">
-                Team</a>
-            </li>
-            <li>
-              <a class="page-scroll" href="#contact">
-                Contact</a>
+              <a class="normal" href="javascript:void(0)" onclick="logout()">
+                Logout</a>
             </li>
           </ul>
         </div>
@@ -80,21 +76,26 @@
       <!-- /.container-fluid -->
     </nav>
     <!-- Header -->
-    <header>
-      <div class="container" style="padding-top:90px">
-        <h1>
-          Search</h1>
-        <div id="map-canvas" style="height: 500px; width: 90%; border: solid 1px">
+    <!-- Header -->
+    <header id="dashboard" class="small">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">
+            Welcome to Puber!</div>
+          <h3 class="section-subheading text-muted col-md-8 col-md-offset-2">
+            <legend>
+              ¿What would you like to do?</legend>
+          </h3>
+          <a href="giveRide.html" class="page-scroll btn btn-xl col-md-offset-1 col-md-4">
+            Give a ride</a>
+          <div class="col-md-1">
+          </div>
+          <a href="askRide.html" class="page-scroll btn btn-xl col-md-offset-1 col-md-4">
+            Look for a ride</a>
         </div>
-        <form class="new_road" id="new_road" action="/roads" accept-charset="UTF-8" method="post">
-          <button type="submit">
-            Guardar Ruta</button>
-          <textarea name="road[path]" id="road_path" style="display:none">
-          </textarea>
-        </form>
       </div>
     </header>
-    <footer>
+    <footer class="small">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -102,6 +103,26 @@
               Copyright &copy; Puber 2016</span>
           </div>
           <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter">
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook">
+                  </i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin">
+                  </i>
+                </a>
+              </li>
+            </ul>
           </div>
           <div class="col-md-4">
             <ul class="list-inline quicklinks">
@@ -128,14 +149,14 @@
     <!-- Contact Form JavaScript -->
     <script src="scripts/jqBootstrapValidation.js">
     </script>
-    <script src="scripts/contact_me.js">
+    <script src="scripts/subscribe.js">
+    </script>
+    <script src="scripts/login.js">
     </script>
     <!-- Theme JavaScript -->
-    <script src="scripts/agency.min.js">
+    <script src="scripts/puber.js">
     </script>
     <script src="scripts/main.js">
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoaZLtlE_uGVWDt9lMQ5dT2lN3cRp1V7s&callback=initMap" async defer="defer">
     </script>
   </body>
   </body>
