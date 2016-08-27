@@ -258,6 +258,10 @@
               <div id="map-canvas" style="height: 400px; width: 90%; border: solid 1px;"></div>
               <button type="submit">Guardar Ruta</button>
               <input type="hidden" name="road[user_id]" id="road_user_id" value="1"></input>
+              <script language="javascript">
+                user_id = JSON.parse(Cookies.get('puber'))[0].id;
+                $("#road_user_id").val(user_id);
+              </script>
               <textarea name="road[path]" id="road_path" style="display:none;"></textarea>
             </form>
 
