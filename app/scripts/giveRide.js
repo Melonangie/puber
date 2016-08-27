@@ -10,7 +10,7 @@ function initMap() {
         zoom: 15,
         center: { lat: 23.6266557, lng: -102.5375005 },
     };
-    theMap = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+    theMap = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     infoWindow = new google.maps.InfoWindow({map: theMap});
     directionsDisplay = new google.maps.DirectionsRenderer();
     directionsDisplay.setMap(theMap);
@@ -81,12 +81,12 @@ function route(start, end, waypoints=[]) {
     travelMode: google.maps.TravelMode.DRIVING
   };
   directionsService.route(request, function(result, status) {
-    if(status == "OK") {
+    if(status == 'OK') {
       directionsDisplay.setDirections(result);
       removeMarkers();
       populateRoadInput(start, end, waypoints);
     } else {
-      alert("Could not get directions: " + status);
+      alert('Could not get directions: ' + status);
     }
   });
 }
@@ -99,5 +99,5 @@ function populateRoadInput(start, end, waypoints){
   var routeJSON = { start: start.getPosition().toJSON(),
     end: end.getPosition().toJSON(),
     waypoints: waypointsJSON }
-  $("#road_path").val(JSON.stringify(routeJSON));
+  $('#road_path').val(JSON.stringify(routeJSON));
 }

@@ -146,7 +146,7 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   background-color: white;
 }
-.navbar-custom {
+.navbar-custom, {
   background-color: #222222;
   border-color: transparent;
 }
@@ -154,7 +154,7 @@ fieldset[disabled] .btn-xl.active {
   color: #fed136;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
 }
-.navbar-custom.white .navbar-brand {
+.navbar-custom.white.affix-top {
   color: #333;
 }
 .navbar-custom .navbar-brand:hover,
@@ -163,25 +163,16 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .navbar-brand.active {
   color: #fec503;
 }
-.navbar-custom.white .navbar-brand:hover,
-.navbar-custom.white .navbar-brand:focus,
-.navbar-custom.white .navbar-brand:active,
-.navbar-custom.white .navbar-brand.active {
-  color: #333;
-}
-.navbar-custom .navbar-collapse {
+.navbar-custom .navbar-collapse,{
   border-color: rgba(255, 255, 255, 0.02);
 }
-.navbar-custom .navbar-toggle {
+.navbar-custom .navbar-toggle, {
   background-color: #fed136;
   border-color: #fed136;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: white;
   font-size: 12px;
-}
-.navbar-custom.white .navbar-toggle {
-  color: #333;
 }
 .navbar-custom .navbar-toggle:hover,
 .navbar-custom .navbar-toggle:focus {
@@ -198,10 +189,6 @@ fieldset[disabled] .btn-xl.active {
 .navbar-custom .nav li a:focus {
   color: #fed136;
   outline: none;
-}
-.navbar-custom.white .nav li a:hover,
-.navbar-custom.white .nav li a:focus {
-  color: #333;
 }
 .navbar-custom .navbar-nav > .active > a {
   border-radius: 0;
@@ -237,7 +224,7 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222222;
     padding: 10px 0;
   }
-  .navbar-custom.affix .navbar-brand {
+  .navbar-custom.affix .navbar-brand  {
     font-size: 1.5em;
   }
 }
