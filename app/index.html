@@ -76,7 +76,7 @@
         </nav>
 
         <!-- Header -->
-        <header>
+        <header class="main">
             <div class="container">
                 <div class="intro-text">
                     <div class="intro-lead-in">Welcome to Puber Carpool</div>
@@ -366,14 +366,15 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class="modal-title" id="myModalLabel">Login</h4>
                 </div>
-                <form id="login">
+                <form id="loginForm">
                     <div class="modal-body">
+                                <div id="login-success"></div>
                       <div class="form-group">
                         <input class="form-control input-lg" placeholder="Email" type="email" id="login-email" required data-validation-required-message="Please enter your email.">
                                     <p class="help-block text-danger"></p>
                     </div>
                     <div class="form-group">
-                        <input pwfprops="," class="form-control input-lg" placeholder="Password" type="password" id="login-password" required data-validation-required-message="Please enter your password.">
+                        <input pwfprops="," class="form-control input-lg" placeholder="Password" type="password" id="login-password" data-validation-required-message="Please enter your password.">
                                     <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -406,6 +407,8 @@
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<script src="/bower_components/js-cookie/src/js.cookie.js"></script>
+<script src="/bower_components/page/page.js"></script>
 <!-- endbuild -->
 
 <!-- Plugin JavaScript -->

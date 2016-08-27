@@ -1,4 +1,4 @@
-var colors = ["#638EF2", "#BC91EA", "#D3E28E", "#9CC0E5", "#E8A4CA"];
+var colors = ['#638EF2', '#BC91EA', '#D3E28E', '#9CC0E5', '#E8A4CA'];
 var currentColor = 0;
 
 function initPassenger() {
@@ -7,7 +7,7 @@ function initPassenger() {
 }
 
 function getRoads() {
-    $.get( "/roads.json", function( roads ) {
+    $.get( '/roads.json', function( roads ) {
         drawRoad(roads);
     });
 }
@@ -22,7 +22,7 @@ function drawRoad(roads) {
             travelMode: google.maps.TravelMode.DRIVING
         };
         directionsService.route(request, function(result, status) {
-            if(status == "OK") {
+            if(status == 'OK') {
                 currentColor = (currentColor + 1) % colors.length;
                 var dD = new google.maps.DirectionsRenderer({
                   polylineOptions: { strokeColor: colors[currentColor] }
@@ -43,7 +43,7 @@ function drawRoad(roads) {
                 dD.setMap(theMap);
                 dD.setDirections(result);
             } else {
-                alert("Could not get directions: " + status);
+                alert('Could not get directions: ' + status);
             }
         });
     });
@@ -51,6 +51,6 @@ function drawRoad(roads) {
 
 function pickRoad(road) {
     return function(event) {
-        window.location.href = "users/" + road.user.id;
+        window.location.href = 'users/' + road.user.id;
     };
 }

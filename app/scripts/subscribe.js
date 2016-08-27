@@ -1,4 +1,4 @@
-// Contact Form Scripts
+// Subscribe Form Scripts
 
 $(function() {
 

@@ -232,7 +232,6 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../images/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -242,6 +241,32 @@ header {
   -o-background-size: cover;
   text-align: center;
   color: white;
+}
+header.main {
+    background-image: url('../images/header-bg.jpg');
+}
+header.small {
+  height: 450px;
+    background-image: url('../images/header-bg.jpg');
+}
+.fb-image-profile {
+    background-image: url('http://lorempixel.com/180/180/people/9/');
+    margin: 250px 40%;
+    z-index: 9;
+    width: 20%;
+    height:250px;
+    border-radius: 3px;
+}
+@media (max-width:768px) {
+.fb-profile-text>h1{
+    font-weight: 700;
+    font-size:16px;
+}
+.fb-image-profile {
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%;
+}
 }
 header .intro-text {
   padding-top: 100px;
@@ -617,6 +642,10 @@ section#subscribe .text-danger {
 footer {
   padding: 25px 0;
   text-align: center;
+}
+footer.small {
+  background-color: #222222;
+  color: white;
 }
 footer span.copyright {
   line-height: 40px;
